@@ -14,12 +14,12 @@ spring:
     
 eureka: 
   instance: 
-    hostname: www.eureka7001.com # 冒号后面必须要有空格
+    hostname: www.eurekaconfig7001.com # 冒号后面必须要有空格
   client: 
     register-with-eureka: false # 当前的eureka-server自己不注册进服务列表中
     fetch-registry: false # 不通过eureka获取注册信息
     service-url: 
-      defaultZone: http://www.eureka7001.com:7001/eureka/
+      defaultZone: http://www.eurekaconfig7001.com:7001/eureka/
       
 --- # 测试环境
 server: 
@@ -32,12 +32,12 @@ spring:
     
 eureka: 
   instance: 
-    hostname: www.eureka7001.com # 冒号后面必须要有空格
+    hostname: www.eurekaconfig7001.com # 冒号后面必须要有空格
   client: 
     register-with-eureka: false # 当前的eureka-server自己不注册进服务列表中
     fetch-registry: false # 不通过eureka获取注册信息
     service-url: 
-      defaultZone: http://www.eureka7001.com:7001/eureka/
+      defaultZone: http://www.eurekaconfig7001.com:7001/eureka/
       
 --- # 生产环境
 server: 
@@ -50,9 +50,9 @@ spring:
     
 eureka: 
   instance: 
-    hostname: www.eureka7001.com # 冒号后面必须要有空格
+    hostname: www.eurekaconfig7001.com # 冒号后面必须要有空格
   client: 
     register-with-eureka: false # 当前的eureka-server自己不注册进服务列表中
     fetch-registry: false # 不通过eureka获取注册信息
     service-url: 
-      defaultZone: http://www.eureka7001.com:7001/eureka/
+      defaultZone: http://www.eurekaconfig7001.com:7001/eureka/

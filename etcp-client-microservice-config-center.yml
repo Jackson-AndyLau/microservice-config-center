@@ -1,0 +1,120 @@
+spring: 
+  profiles:
+    active:
+    - dev
+    
+--- # 开发环境
+server:
+  port: 8001
+spring: 
+   profiles: dev
+   application: 
+    name: etcp-client-microservice-config-center
+   datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: org.gjt.mm.mysql.Driver
+    url: jdbc:mysql://192.168.159.145:3306/microservice-01
+    username: root
+    password: Huazai12345!
+    dbcp2:
+      min-idle: 5
+      initial-size: 5
+      max-total: 5
+      max-wait-millis: 200 
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  type-aliases-package: com.huazai.springcloud.entity
+  mapper-locations:
+  - classpath:mybatis/mapper/**/*.xml
+ 
+eureka: 
+  client: # 将客户端注册进eureka服务列表内
+    service-url: 
+      defaultZone: http://www.eureka7001.com:7001/eureka
+  instance:
+    instance-id: microservice-provider-8001
+    prefer-ip-address: true
+ 
+info:
+  app.name: learning-microservice-springcloud
+  company.name: huazai-studio
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+  
+--- # 测试环境
+server:
+  port: 8001
+spring: 
+   profiles: test
+   application: 
+    name: etcp-client-microservice-config-center
+   datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: org.gjt.mm.mysql.Driver
+    url: jdbc:mysql://192.168.159.145:3306/microservice-01
+    username: root
+    password: Huazai12345!
+    dbcp2:
+      min-idle: 5
+      initial-size: 5
+      max-total: 5
+      max-wait-millis: 200 
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  type-aliases-package: com.huazai.springcloud.entity
+  mapper-locations:
+  - classpath:mybatis/mapper/**/*.xml
+ 
+eureka: 
+  client: # 将客户端注册进eureka服务列表内
+    service-url: 
+      defaultZone: http://www.eureka7001.com:7001/eureka
+  instance:
+    instance-id: microservice-provider-8001
+    prefer-ip-address: true
+ 
+info:
+  app.name: learning-microservice-springcloud
+  company.name: huazai-studio
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+  
+--- # 发布环境
+server:
+  port: 8001
+spring: 
+   profiles: prod
+   application: 
+    name: etcp-client-microservice-config-center
+   datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: org.gjt.mm.mysql.Driver
+    url: jdbc:mysql://192.168.159.145:3306/microservice-01
+    username: root
+    password: Huazai12345!
+    dbcp2:
+      min-idle: 5
+      initial-size: 5
+      max-total: 5
+      max-wait-millis: 200 
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  type-aliases-package: com.huazai.springcloud.entity
+  mapper-locations:
+  - classpath:mybatis/mapper/**/*.xml
+ 
+eureka: 
+  client: # 将客户端注册进eureka服务列表内
+    service-url: 
+      defaultZone: http://www.eureka7001.com:7001/eureka
+  instance:
+    instance-id: microservice-provider-8001
+    prefer-ip-address: true
+ 
+info:
+  app.name: learning-microservice-springcloud
+  company.name: huazai-studio
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+  
+  

@@ -1,0 +1,58 @@
+spring: 
+  profiles: 
+    active: 
+    - dev
+    
+--- # 开发环境配置
+server: 
+  port: 7001 # 该服务注册中心采用7001端口,冒号后面必须要有空格
+   
+spring: 
+  profiles: dev
+  application:
+    name: eureka-client-microservice-config-center
+    
+eureka: 
+  instance: 
+    hostname: www.eureka7001.com # 冒号后面必须要有空格
+  client: 
+    register-with-eureka: false # 当前的eureka-server自己不注册进服务列表中
+    fetch-registry: false # 不通过eureka获取注册信息
+    service-url: 
+      defaultZone: http://www.eureka7001.com:7001/eureka/
+      
+--- # 测试环境
+server: 
+  port: 7001 # 该服务注册中心采用7001端口,冒号后面必须要有空格
+   
+spring: 
+  profiles: test
+  application:
+    name: eureka-client-microservice-config-center
+    
+eureka: 
+  instance: 
+    hostname: www.eureka7001.com # 冒号后面必须要有空格
+  client: 
+    register-with-eureka: false # 当前的eureka-server自己不注册进服务列表中
+    fetch-registry: false # 不通过eureka获取注册信息
+    service-url: 
+      defaultZone: http://www.eureka7001.com:7001/eureka/
+      
+--- # 生产环境
+server: 
+  port: 7001 # 该服务注册中心采用7001端口,冒号后面必须要有空格
+   
+spring: 
+  profiles: prod
+  application:
+    name: eureka-client-microservice-config-center
+    
+eureka: 
+  instance: 
+    hostname: www.eureka7001.com # 冒号后面必须要有空格
+  client: 
+    register-with-eureka: false # 当前的eureka-server自己不注册进服务列表中
+    fetch-registry: false # 不通过eureka获取注册信息
+    service-url: 
+      defaultZone: http://www.eureka7001.com:7001/eureka/

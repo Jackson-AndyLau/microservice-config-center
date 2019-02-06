@@ -51,7 +51,7 @@ spring:
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.gjt.mm.mysql.Driver
-    url: jdbc:mysql://192.168.159.145:3306/microservice-01
+    url: jdbc:mysql://192.168.159.145:3306/microservice-02
     username: root
     password: Huazai12345!
     dbcp2:
@@ -89,7 +89,7 @@ spring:
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.gjt.mm.mysql.Driver
-    url: jdbc:mysql://192.168.159.145:3306/microservice-01
+    url: jdbc:mysql://192.168.159.145:3306/microservice-03
     username: root
     password: Huazai12345!
     dbcp2:

@@ -36,7 +36,7 @@ eureka:
     prefer-ip-address: true
  
 info:
-  app.name: learning-microservice-springcloud
+  app.name: etc-microservice-springcloud
   company.name: huazai-studio
   build.artifactId: $project.artifactId$
   build.version: $project.version$
@@ -74,7 +74,7 @@ eureka:
     prefer-ip-address: true
  
 info:
-  app.name: learning-microservice-springcloud
+  app.name: etc-microservice-springcloud
   company.name: huazai-studio
   build.artifactId: $project.artifactId$
   build.version: $project.version$
@@ -112,7 +112,7 @@ eureka:
     prefer-ip-address: true
  
 info:
-  app.name: learning-microservice-springcloud
+  app.name: etc-microservice-springcloud
   company.name: huazai-studio
   build.artifactId: $project.artifactId$
   build.version: $project.version$

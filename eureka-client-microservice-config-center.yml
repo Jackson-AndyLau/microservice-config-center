@@ -56,3 +56,6 @@ eureka:
     fetch-registry: false # 不通过eureka获取注册信息
     service-url: 
       defaultZone: http://www.eurekaconfig7001.com:7001/eureka/
+      
+      
+      
